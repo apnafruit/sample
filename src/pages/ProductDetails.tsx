@@ -246,12 +246,12 @@ const ProductDetails = () => {
             >
               Care Instructions
             </TabsTrigger>
-            <TabsTrigger
+            {/*<TabsTrigger
               value="reviews"
               className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent"
             >
               Reviews
-            </TabsTrigger>
+            </TabsTrigger>*/}
           </TabsList>
           <TabsContent value="description" className="mt-6">
             <p className="text-muted-foreground leading-relaxed max-w-3xl">
@@ -269,7 +269,7 @@ const ProductDetails = () => {
               <li>• Do not dry clean</li>
             </ul>
           </TabsContent>
-          <TabsContent value="reviews" className="mt-6">
+          {/*<TabsContent value="reviews" className="mt-6">
             <div className="space-y-6 max-w-3xl">
               {[1, 2, 3].map(i => (
                 <div key={i} className="border-b border-border pb-6 last:border-0">
@@ -294,7 +294,7 @@ const ProductDetails = () => {
                 </div>
               ))}
             </div>
-          </TabsContent>
+          </TabsContent>*/}
         </Tabs>
       </section>
 
