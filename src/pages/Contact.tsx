@@ -11,17 +11,17 @@ const contactInfo = [
   {
     icon: MapPin,
     title: 'Visit Us',
-    lines: ['123 Fashion Street', 'Style City, SC 12345'],
+    lines: ['Machilipatnam'],
   },
   {
     icon: Phone,
     title: 'Call Us',
-    lines: ['+1 (234) 567-890', 'Mon - Sat: 9AM - 6PM'],
+    lines: ['79979 57999 or 79979 67999', 'Mon - Sat: 9AM - 6PM'],
   },
   {
     icon: Mail,
     title: 'Email Us',
-    lines: ['hello@glamher.com', 'support@glamher.com'],
+    lines: ['srimatrika.official@gmail.com'],
   },
 ];
 
@@ -78,13 +78,13 @@ const Contact = () => {
               </div>
               
               <div className="space-y-2">
-                <Label htmlFor="email">Email Address</Label>
+                <Label htmlFor="email">Phone number</Label>
                 <Input
                   id="email"
                   type="email"
                   value={formData.email}
                   onChange={e => setFormData({ ...formData, email: e.target.value })}
-                  placeholder="Enter your email"
+                  placeholder="Enter your phone number"
                   required
                 />
               </div>

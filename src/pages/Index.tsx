@@ -275,16 +275,14 @@ const Index = () => {
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Stay in Style</h2>
             <p className="text-muted-foreground mb-8">
-              Subscribe to get exclusive offers, style updates, and early access to new collections.
+              It's time to change your wardobe
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 rounded-lg border border-border bg-card focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-              <Button className="px-8">Subscribe</Button>
-            </div>
+              <Link to="/shop">
+                <Button size="lg" className="w-full sm:w-auto text-base px-8">
+                  Shop Now
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
           </div>
         </div>
       </section>

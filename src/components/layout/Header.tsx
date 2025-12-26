@@ -26,7 +26,7 @@ export const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <span className="font-serif text-2xl font-bold text-primary md:text-3xl">
-              GlamHer
+              Sri Matrika
             </span>
           </Link>
 
@@ -57,7 +57,7 @@ export const Header = () => {
               <Search className="h-5 w-5" />
             </Button>
             
-            <Link to="/wishlist">
+           {/*<Link to="/wishlist">
               <Button variant="ghost" size="icon" className="relative">
                 <Heart className="h-5 w-5" />
                 {wishlistItems.length > 0 && (
@@ -66,7 +66,7 @@ export const Header = () => {
                   </span>
                 )}
               </Button>
-            </Link>
+            </Link>*/}
             
             <Link to="/cart">
               <Button variant="ghost" size="icon" className="relative">

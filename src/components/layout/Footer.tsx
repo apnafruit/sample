@@ -19,9 +19,9 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: Instagram, href: '#', label: 'Instagram' },
-  { icon: Facebook, href: '#', label: 'Facebook' },
-  { icon: Twitter, href: '#', label: 'Twitter' },
+  { icon: Instagram, href: 'https://www.instagram.com/srimatrika?igsh=dzFmeGFpNzNqYXc%3D&utm_source=qr', label: 'Instagram' },
+  { icon: Facebook, href: 'https://www.facebook.com/share/17cNv77cfD/?mibextid=wwXIfr', label: 'Facebook' },
+  { icon: Twitter, href: 'https://www.threads.com/@srimatrika?igshid=NTc4MTIwNjQ2YQ==', label: 'Twitter' },
 ];
 
 export const Footer = () => {
@@ -33,7 +33,7 @@ export const Footer = () => {
           <div className="lg:col-span-1">
             <Link to="/" className="inline-block">
               <span className="font-serif text-2xl font-bold text-primary">
-                GlamHer
+                Sri Matrika
               </span>
             </Link>
             <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
@@ -94,19 +94,25 @@ export const Footer = () => {
               <li className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                 <span className="text-sm text-muted-foreground">
-                  123 Fashion Street, Style City, SC 12345
+                  Machilipatnam
                 </span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-primary flex-shrink-0" />
                 <span className="text-sm text-muted-foreground">
-                  +1 (234) 567-890
+                  79979 57999 
                 </span>
               </li>
               <li className="flex items-center space-x-3">
+                <Phone className="h-5 w-5 text-primary flex-shrink-0" />
+                <span className="text-sm text-muted-foreground">
+                  79979 67999
+                </span>
+                </li>
+              <li className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary flex-shrink-0" />
                 <span className="text-sm text-muted-foreground">
-                  hello@glamher.com
+                  srimatrika.official@gmail.com
                 </span>
               </li>
             </ul>
