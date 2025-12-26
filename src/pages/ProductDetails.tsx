@@ -98,13 +98,13 @@ const ProductDetails = () => {
           {/* Details */}
           <div className="space-y-6">
             <div>
-              <div className="flex items-center gap-2 mb-2">
+             {/* <div className="flex items-center gap-2 mb-2">
                 <div className="flex items-center gap-1">
-                  <Star className="h-5 w-5 fill-accent-foreground text-accent-foreground" />
+                 <Star className="h-5 w-5 fill-accent-foreground text-accent-foreground" />
                   <span className="font-medium">{product.rating}</span>
                 </div>
                 <span className="text-muted-foreground">({product.reviews} reviews)</span>
-              </div>
+              </div>*/}
               <h1 className="text-3xl md:text-4xl font-bold mb-4">{product.name}</h1>
               <div className="flex items-baseline gap-3">
                 <span className="text-3xl font-bold text-primary">
@@ -192,20 +192,17 @@ const ProductDetails = () => {
 
             {/* Actions */}
             <div className="flex flex-col sm:flex-row gap-3">
-              <Button size="lg" className="flex-1" onClick={handleOrder}>
-                Order on WhatsApp
-              </Button>
               <Button size="lg" variant="outline" onClick={handleAddToCart} className="flex-1">
                 Add to Cart
               </Button>
-              <Button
+              {/*<Button
                 size="lg"
                 variant="outline"
                 onClick={handleAddToWishlist}
                 className={cn(inWishlist && 'text-primary border-primary')}
               >
                 <Heart className="h-5 w-5" fill={inWishlist ? 'currentColor' : 'none'} />
-              </Button>
+              </Button>*/}
             </div>
 
             {/* Features */}

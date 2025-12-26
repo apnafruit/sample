@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CartProvider } from "@/context/CartContext";
 import { WishlistProvider } from "@/context/WishlistContext";
 import { Layout } from "@/components/layout";
+
+import ScrollToTop from "@/components/ScrollToTop";
 import Index from "./pages/Index";
 import Shop from "./pages/Shop";
 import ProductDetails from "./pages/ProductDetails";
@@ -14,6 +16,8 @@ import Cart from "./pages/Cart";
 import Wishlist from "./pages/Wishlist";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+
+
 
 const queryClient = new QueryClient();
 
@@ -25,6 +29,7 @@ const App = () => (
           <Toaster />
           <Sonner />
           <BrowserRouter>
+          <ScrollToTop />
             <Layout>
               <Routes>
                 <Route path="/" element={<Index />} />

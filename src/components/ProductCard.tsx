@@ -54,7 +54,7 @@ export const ProductCard = ({ product, className }: ProductCardProps) => {
             )}
           </div>
 
-          {/* Wishlist Button */}
+          {/* Wishlist Button 
           <button
             onClick={handleWishlist}
             className={cn(
@@ -64,29 +64,26 @@ export const ProductCard = ({ product, className }: ProductCardProps) => {
             aria-label={inWishlist ? 'Remove from wishlist' : 'Add to wishlist'}
           >
             <Heart className="h-5 w-5" fill={inWishlist ? 'currentColor' : 'none'} />
-          </button>
+          </button>*/}
 
           {/* Quick Actions */}
           <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
             <div className="flex gap-2">
-              <Button
-                onClick={handleOrder}
-                className="flex-1 bg-primary hover:bg-primary/90"
-                size="sm"
-              >
-                <ShoppingBag className="h-4 w-4 mr-2" />
-                Order Now
-              </Button>
+              <Link to={`/product/${product.id}`} className="flex-1">
+  <Button
+    className="w-full bg-primary hover:bg-primary/90"
+    size="sm"
+  >
+    <ShoppingBag className="h-4 w-4 mr-2" />
+    Order Now
+  </Button>
+</Link>
+
             </div>
           </div>
         </div>
 
         <div className="mt-4 space-y-1">
-          <div className="flex items-center gap-1">
-            <Star className="h-4 w-4 fill-accent-foreground text-accent-foreground" />
-            <span className="text-sm font-medium">{product.rating}</span>
-            <span className="text-sm text-muted-foreground">({product.reviews})</span>
-          </div>
           
           <h3 className="font-medium text-foreground line-clamp-1 group-hover:text-primary transition-colors">
             {product.name}
