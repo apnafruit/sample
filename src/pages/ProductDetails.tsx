@@ -192,9 +192,15 @@ const ProductDetails = () => {
 
             {/* Actions */}
             <div className="flex flex-col sm:flex-row gap-3">
-              <Button size="lg" variant="outline" onClick={handleAddToCart} className="flex-1">
-                Add to Cart
-              </Button>
+              <Button
+  size="lg"
+  variant="outline"
+  onClick={handleAddToCart}
+  className="flex-1 min-h-[52px] sm:min-h-[44px] py-4 sm:py-2"
+>
+  Add to Cart
+</Button>
+
               {/*<Button
                 size="lg"
                 variant="outline"
